@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wordvault: learn the words you meet while you browse</title>
+<meta name="description" content="Wordvault is a browser extension for Chrome and Firefox: translate words on web pages, save them to your vault and review them with short flashcard quizzes.">
+<link rel="icon" href="favicon.png">
+<style>
+:root{--bg:#fafaf9;--fg:#1c1b22;--muted:#5d5c66;--card:#fff;--line:#e4e4e7;--accent:#4f46e5;--accent-fg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141318;--fg:#ecebf2;--muted:#a3a2ad;--card:#1d1c23;--line:#2e2d36;--accent:#8b85ff;--accent-fg:#141318}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+main{max-width:860px;margin:0 auto;padding:48px 20px 64px}
+header{text-align:center}
+header img{width:96px;height:96px;border-radius:22px}
+h1{font-size:44px;line-height:1.1;margin:16px 0 8px;letter-spacing:-.02em}
+.tag{font-size:21px;color:var(--muted);margin:0 0 28px}
+.lead{max-width:640px;margin:0 auto 32px;text-align:center}
+.shot{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.08);margin:8px 0 40px}
+h2{font-size:24px;margin:40px 0 12px}
+ul{padding-left:20px}
+li{margin:6px 0}
+.note{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:24px 0}
+.links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:28px 0 0}
+.links a{display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg);text-decoration:none;font-weight:600}
+.links a.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+a{color:var(--accent)}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;text-align:center}
+@media (max-width:600px){h1{font-size:34px}.tag{font-size:18px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="icon.png" alt="Wordvault icon" width="96" height="96">
+  <h1>Wordvault</h1>
+  <p class="tag">Learn the words you meet while you browse.</p>
+</header>
+
+<p class="lead">Wordvault is a free browser extension for Chrome and Firefox. Double-click a word you don't know and its translation opens right next to it. One click saves it to your vault, and short flashcard quizzes bring it back until you know it.</p>
+
+<img class="shot" src="translation.png" width="1280" height="800" alt="The Wordvault translation bubble next to a double-clicked word on a web page">
+
+<h2>What it does</h2>
+<ul>
+  <li><strong>Translate in place:</strong> double-click a word, translate a selected sentence or paragraph, or point at a word in YouTube captions.</li>
+  <li><strong>Scan text on screen:</strong> drag over a paused video or an image and click the words; the text is read on your device.</li>
+  <li><strong>Your vault:</strong> every saved word keeps the sentence you found it in, with definitions and examples from Wiktionary.</li>
+  <li><strong>Flashcard quizzes:</strong> pick, type or listen; spaced repetition, a daily goal, a streak and ranks.</li>
+  <li><strong>Optional AI features</strong> with an AI provider of your own choice and your own API key: explain a word or passage, summarise or translate a page, make a printable practice test.</li>
+  <li><strong>Optional sync</strong> through your browser's sync, your own Google Drive or your own WebDAV server.</li>
+</ul>
+
+<img class="shot" src="quiz.png" width="1280" height="800" alt="A Wordvault flashcard quiz on a web page">
+
+<h2>Google Drive sync</h2>
+<p>Sync is off until you turn it on. If you choose Google Drive, Wordvault asks for access only to its own hidden app data folder in your Drive (the <code>drive.appdata</code> scope), not to your files. It stores one file there, your vault, so that your other devices can read it. The data is used only to synchronise your vault, never shared, and never seen by the developer. You can disconnect at any time in the settings, and remove the file in Google Drive under Settings → Manage apps → Wordvault.</p>
+
+<div class="note"><strong>Privacy:</strong> no account, no ads, no analytics, no tracking. Your vault stays in your browser; Wordvault has no server that receives your words or the pages you visit. Every case in which data leaves your browser is listed in the <a href="https://phobby.github.io/wordvault-privacy/">privacy policy</a>.</div>
+
+<div class="links">
+  <a class="primary" href="https://phobby.github.io/wordvault-privacy/">Privacy policy</a>
+  <a href="https://github.com/Phobby/Wordvault">Source code</a>
+  <a href="https://github.com/Phobby/Wordvault/issues">Feedback and support</a>
+</div>
+
+<footer>
+  Wordvault is made by Phobby · Contact: <a href="mailto:phoby.dev@gmail.com">phoby.dev@gmail.com</a><br>
+  Source available under the PolyForm Noncommercial License 1.0.0.
+</footer>
+</main>
+</body>
+</html>
